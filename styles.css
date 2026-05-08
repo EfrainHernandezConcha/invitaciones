@@ -1,0 +1,111 @@
+  .nombresFamilia{
+    font-family: "Great Vibes", cursive;
+    font-size: 80px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.letra{
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+p{
+    font-family: "Bacasime Antique", cursive;
+    font-size: 30px;
+    font-weight: 300;
+    font-style:normal;
+}
+
+.instantaneas{
+    border-color: black;
+    border-style:none;
+    border-width: 0.02cm;
+}
+
+.rotarIzquierda {
+    transform: rotate(180deg);
+  }
+
+  .rotarDerecha {
+    transform: rotate(270deg);
+  }
+
+  .hidden{
+    overflow: hidden;
+  }
+
+  .TextOnImage{
+    color: whitesmoke;
+    font-weight: bolder;
+  }
+
+  .flor-chica{
+    height:100%;
+  }
+
+
+
+
+
+  .zoom{
+    transition: transform 3s, opacity 0.5s ;
+  }
+  .zoom:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+
+
+
+
+
+  .oculto {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.5s ease;
+  }
+
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .oculto-izquierdo {
+    opacity: 1;
+    transform: rotate(180deg) translateX(100%) translateY(10%);
+    transition: all 4s ease;
+    overflow: hidden;
+  }
+
+  .visible-izquierdo {
+    opacity: 1;
+    transform: rotate(180deg) translateX(20%) translateY(10%);
+    transition: all 3s ease;
+    overflow: hidden;
+  }
+
+
+  .img-fluid{
+    width:auto;
+    height: auto;
+  }
+
+
+  p{
+    border-style: none;
+
+  }
+
+  img{
+    border-style: none;
+
+  }
+
+  div{
+    border-style: none;
+
+  }
