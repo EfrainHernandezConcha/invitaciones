@@ -209,6 +209,110 @@
 </div>
 
 
+
+<!--CONFIRMACION POR WHATSAPP-->
+
+<a href="https://wa.me/5219931044465"
+   class="btn btn-success w-100 mt-3">
+   Confirmar por WhatsApp
+</a>
+
+<!--CONFIRMACION POR MEDIO DE UN FORMS-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form>
+
+                <!-- Nombre -->
+                <div class="mb-3">
+                  <label class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" placeholder="Escribe tu nombre" required>
+                </div>
+            
+                <!-- Asistencia -->
+                <div class="mb-3">
+                  <label class="form-label">¿Asistirás?</label>
+            
+                  <select class="form-select" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="si">Sí, asistiré</option>
+                    <option value="no">No podré asistir</option>
+                  </select>
+                </div>
+            
+                <!-- Acompañantes -->
+                <div class="mb-3">
+                  <label class="form-label">Número de acompañantes</label>
+            
+                  <input type="number"
+                         class="form-control"
+                         min="0"
+                         max="5"
+                         value="0">
+                </div>
+            
+                <!-- Mensaje -->
+                <div class="mb-4">
+                  <label class="form-label">Mensaje para los novios</label>
+            
+                  <textarea class="form-control"
+                            rows="4"
+                            placeholder="Escribe un mensaje bonito..."></textarea>
+                </div>
+            
+                <!-- Botón -->
+                <button type="submit" class="btn btn-dark btn-confirmar">
+                  Confirmar asistencia
+                </button>
+            
+              </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!--CUENTA REGRESIVA-->
+
+<div class="contador">
+    <div class="titulo">
+        Cuenta Regresiva
+    </div>
+
+    <div class="tiempo">
+
+        <div class="box">
+            <div id="dias" class="numero">00</div>
+            <div class="texto">Días</div>
+        </div>
+
+        <div class="box">
+            <div id="horas" class="numero">00</div>
+            <div class="texto">Horas</div>
+        </div>
+
+        <div class="box">
+            <div id="minutos" class="numero">00</div>
+            <div class="texto">Minutos</div>
+        </div>
+
+        <div class="box">
+            <div id="segundos" class="numero">00</div>
+            <div class="texto">Segundos</div>
+        </div>
+
+    </div>
+</div>
+
+
+
     <!-- Bootstrap JS + Popper (CDN) -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
