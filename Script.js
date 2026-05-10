@@ -38,6 +38,54 @@ function mostrarElementosIzquierda() {
 
 
 
+
+//CUENTA REGRESIVA 
+
+const fechaObjetivo = new Date("Jul 21, 2027 16:30:00").getTime();
+
+        const actualizarContador = () => {
+
+            const ahora = new Date().getTime();
+            const diferencia = fechaObjetivo - ahora;
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+            const horas = Math.floor(
+                (diferencia % (1000 * 60 * 60 * 24))
+                / (1000 * 60 * 60)
+            );
+
+            const minutos = Math.floor(
+                (diferencia % (1000 * 60 * 60))
+                / (1000 * 60)
+            );
+
+            const segundos = Math.floor(
+                (diferencia % (1000 * 60))
+                / 1000
+            );
+
+            document.getElementById("dias").innerHTML = dias;
+            document.getElementById("horas").innerHTML = horas;
+            document.getElementById("minutos").innerHTML = minutos;
+            document.getElementById("segundos").innerHTML = segundos;
+
+            // Cuando termina
+            if(diferencia < 0){
+                clearInterval(intervalo);
+
+                document.querySelector(".contador").innerHTML = `
+                    <h1>¡La cuenta terminó!</h1>
+                `;
+            }
+        };
+
+        actualizarContador();
+
+        const intervalo = setInterval(actualizarContador, 1000);
+
+
+
 // 🔥 Ejecutar también al cargar
 window.addEventListener('scroll', mostrarElementos);
 window.addEventListener('load', mostrarElementos);
