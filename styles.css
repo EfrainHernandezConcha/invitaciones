@@ -109,3 +109,96 @@ p{
     border-style: none;
 
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body{
+    background-color:#f8f5f2;
+    font-family: Arial, sans-serif;
+  }
+
+  .rsvp-container{
+    max-width:600px;
+    margin:auto;
+    margin-top:50px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  .titulo{
+    text-align:center;
+    margin-bottom:30px;
+  }
+
+  .btn-confirmar{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  body{
+
+    background:rgb(255, 255, 255);
+    color: white;
+}
+
+.contador{
+    text-align: center;
+}
+
+.titulo{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tiempo{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 100px;
+  
+}
+
+.numero{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.texto{
+    font-size: 1rem;
+    margin-top: 10px;
+}
